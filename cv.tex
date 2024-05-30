@@ -1,35 +1,35 @@
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
+%   The MIT License (MIT)
 %
-%	Copyright (c) 2021 Jitin Nair
+%   Copyright (c) 2021 Jitin Nair
 %
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
+%   Permission is hereby granted, free of charge, to any person obtaining a copy
+%   of this software and associated documentation files (the "Software"), to deal
+%   in the Software without restriction, including without limitation the rights
+%   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%   copies of the Software, and to permit persons to whom the Software is
+%   furnished to do so, subject to the following conditions:
+%   
+%   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%   THE SOFTWARE.
+%   
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
 %----------------------------------------------------------------------------------------
-%	DOCUMENT DEFINITION
+%   DOCUMENT DEFINITION
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
 \documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
-%	FONT
+%   FONT
 %----------------------------------------------------------------------------------------
 
 % % fontspec allows you to use TTF/OTF fonts directly
@@ -45,10 +45,10 @@
 % {Fontin.otf}
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES
+%   PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}    
 
 %other packages for formatting
 \RequirePackage{color}
@@ -72,7 +72,7 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}               
 \usepackage{multicol}
 \usepackage{multirow}
 
@@ -124,7 +124,7 @@
 
 
 %----------------------------------------------------------------------------------------
-%	BEGIN DOCUMENT
+%   BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
 \begin{document}
 
@@ -132,84 +132,150 @@
 \pagestyle{empty} 
 
 %----------------------------------------------------------------------------------------
-%	TITLE
+%   TITLE
 %----------------------------------------------------------------------------------------
 
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/rl27}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/raymondzl}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://rl27.github.io}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Raymond Liu} \\[7.5pt]
+\href{https://github.com/rl27}{\raisebox{-0.05\height}\faGithub\ rl27} \ $|$ \ 
+\href{https://linkedin.com/in/raymondzl}{\raisebox{-0.05\height}\faLinkedin\ raymondzl} \ $|$ \ 
+\href{https://rl27.github.io}{\raisebox{-0.05\height}\faGlobe \ rl27.github.io} \ $|$ \ 
+\href{mailto:liur@seas.harvard.edu}{\raisebox{-0.05\height}\faEnvelope \ liur@seas.harvard.edu} \ $|$ \ 
+\href{tel:5416020508}{\raisebox{-0.05\height}\faMobile \ (541) 602-0508} \\
 \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{joblong}{Harvard University}{2024 – Present}
+\item PhD in Computer Science
+\item Funded by the NSF GRFP
+\end{joblong}
+
+\vspace{-3pt}
+\begin{joblong}{Princeton University}{2019 – 2023}
+\item BSE in Computer Science (GPA: 3.9/4.0)
+\item Certificate in Statistics and Machine Learning
+\item Relevant courses: Computer Vision, NLP, Mathematics for Machine Learning, \newline Algorithms and Data Structures, Statistics \& Data Analysis, Computer Architecture
+\end{joblong}
+
+\vspace{-3pt}
+\begin{joblong}{Crescent Valley High School}{2016 – 2019}
+\item Valedictorian (GPA: 4.0/4.0)
+\end{joblong}
+
+% \begin{tabularx}{\linewidth}{@{}p{6.2in} X@{}} 
+% \textbf{Harvard University} & \hfill \normalsize 2024 - Present \\
+% \hspace{1em}\textit{PhD in Computer Science} \\
+
+% \vspace{-4pt}
+% \textbf{Princeton University} & \hfill 2019 - 2023 \\
+% \hspace{1em}\textit{B.S.E. in Computer Science (GPA: 3.9/4.0)} \\
+% \hspace{1em}\textit{Certificate in Statistics and Machine Learning} \\
+% \hspace{1em}Relevant courses: Computer Vision, NLP, Mathematics for Machine Learning, Algorithms and Data Structures, Statistics \& Data Analysis \\
+
+% \vspace{-4pt}
+% \textbf{Crescent Valley High School} & \hfill 2016 - 2019 \\
+% \hspace{1em}\textit{Valedictorian (GPA: 4.0/4.0)} \\
+% \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
 %Experience
+\vspace{-10pt}
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+\begin{joblong}{Visiting Researcher at Harvard Ability Lab}{July 2023 – Aug. 2024}
+\item Developing a smartphone-based navigation assistant for people who are blind or visually impaired.
 \end{joblong}
-  
+
+\begin{joblong}{Software Engineering Intern at Amazon}{May 2022 – Aug. 2022}
+\item Developed, tested, and optimized an API in Java to send parallelized batch requests to Elasticsearch and greatly speed up workflows.
+\end{joblong}
+
+\begin{joblong}{Teaching Assistant at Princeton University}{Sept. 2021 – May 2023}
+\item TA for \href{https://www.cs.princeton.edu/courses/archive/fall21/cos340/}{COS340 – Reasoning about Computation}
+\item Guided students during regular office hours; graded and provided feedback for assignments and exams.
+\item Covered mathematical and theoretical topics in computer science – combinatorics, probability, graph theory, NP-completeness, and cryptography.
+\end{joblong}
+
+\begin{joblong}{Research Project at Princeton University}{June 2021 – Feb. 2022}
+\item Joined the Laboratory for Intelligent Probabilistic Systems under Ryan Adams.
+\item Developed a system for visualizing generative models in 3D hyperbolic space. Created a model and projection of 3D hyperbolic space using OpenGL and connected the model with a model for generating correlated images based on geodesic distance.
+\end{joblong}
+
+\begin{joblong}{Research Assistant at Princeton University}{June 2020 – Aug. 2020}
+\item Joined the Princeton Vision \& Learning Lab to work on a visual learning project on optical flow.
+\item Developed and optimized a system for collecting human-annotated images and predicting ground truth optical flow from annotation pairs.
+\end{joblong}
+
+\begin{joblong}{Computer Graphics Internship at Oregon State University}{June 2018 – Aug. 2018}
+\item Designed a ray tracer / image renderer from scratch using C++. Tested and implemented a variety of methods to increase image realism and accelerate rendering speed.
+\end{joblong}
+
+\begin{joblong}{Teaching Assistant at Oregon State University}{Sept. 2017 – Mar. 2018}
+\item TA for CS162 - Introduction to Computer Science II
+\item Guided students during regular office hours; Graded and provided feedback for projects and labs.
+\item Covered C++ programming, data structures, algorithms, polymorphism and inheritance.
+\end{joblong}
+
 %Projects
 \section{Projects}
+Visit \href{https://rl27.github.io/}{my website} to see my past projects with corresponding visuals, repos, posters, and more.
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+% Awards
+\section{Honors, Awards, and Achievements}
+
+\begin{jobshort}{NSF Graduate Research Fellowship Awardee}{Apr. 2024}
+\end{jobshort}
+\begin{joblong}{Harvard GRID Accelerator Awardee}{Feb. 2024}
+    \item Received \$100k in funding for our proposal, “Navigation assistant for people with impaired vision or blindness.” 
+\end{joblong}
+\begin{joblong}{Amazon Greater Boston Tech Initiative Awardee}{Dec. 2023}
+    \item Received \$50k in funding for our proposal, “Curriculum for developing a robotic navigation assistant for people with visual impairment.” 
+\end{joblong}
+\begin{jobshort}{NSF Graduate Research Fellowship Honorable Mention}{Mar. 2023}
+\end{jobshort}
+\begin{joblong}{USA Junior Math Olympiad Qualifier}{Apr. 2018}
+    \item One of 156 qualifiers nationwide.
+\end{joblong}
+\begin{joblong}{American Invitational Mathematics Examination Qualifier}{2016, 2017, 2018}
+    \item The top 2.5\% of participants in the AMC 10 exam qualify for the AIME.
+\end{joblong}
+\begin{jobshort}{Oregon Invitational Mathematics Tournament - 3rd Place (Team Event)}{May 2018}
+\end{jobshort}
+\begin{jobshort}{Oregon Invitational Mathematics Tournament - 4th Place (Calculus)}{May 2017}
+\end{jobshort}
+\begin{jobshort}{Intel Northwest Science Expo (NWSE) Finalist}{Apr. 2017}
+\end{jobshort}
+\begin{jobshort}{IEEE Excellence in Computer Science Award at Intel NWSE}{Apr. 2017}
+\end{jobshort}
+\begin{jobshort}{Central Western Oregon Science Expo (CWOSE) Finalist}{Feb. 2017}
+\end{jobshort}
+\begin{jobshort}{Yale Science and Engineering Award in Computer Science at CWOSE}{Feb. 2017}
+\end{jobshort}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+%   PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
+% \section{Publications}
+% \begin{refsection}[citations.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS
+%   SKILLS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
-\end{tabularx}
+% \section{Skills}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% Languages &  \normalsize{C++, C, C\#, Python, Java, JavaScript, HTML, CSS, OCaml}\\
+% Frameworks \& Tools  &  \normalsize{Git, LaTeX, PyTorch, NumPy, Matplotlib, jQuery, Bootstrap, Flask}\\  
+% \end{tabularx}
 
 \vfill
 \center{\footnotesize Last updated: \today}
