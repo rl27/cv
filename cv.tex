@@ -48,7 +48,8 @@
 %   PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip}    
+\usepackage{parskip}
+\usepackage{changepage}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -114,7 +115,7 @@
     \textbf{#1} & \hfill &  #2 \\[3.75pt]
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt,label=--]
     }
     {
     \end{itemize}
@@ -148,6 +149,7 @@
 %   EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
+\begin{adjustwidth}{0.7em}{0pt}
 
 \begin{joblong}{Harvard University}{2024 – Present}
 \item PhD in Computer Science
@@ -181,6 +183,8 @@
 % \hspace{1em}\textit{Valedictorian (GPA: 4.0/4.0)} \\
 % \end{tabularx}
 
+\end{adjustwidth}
+
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
@@ -188,6 +192,7 @@
 %Experience
 \vspace{-10pt}
 \section{Work Experience}
+\begin{adjustwidth}{0.7em}{0pt}
 
 \begin{joblong}{Visiting Researcher at Harvard Ability Lab}{July 2023 – Aug. 2024}
 \item Developing a smartphone-based navigation assistant for people who are blind or visually impaired.
@@ -223,13 +228,17 @@
 \item Guided students during regular office hours; Graded and provided feedback for projects and labs.
 \item Covered C++ programming, data structures, algorithms, polymorphism and inheritance.
 \end{joblong}
+\end{adjustwidth}
 
 %Projects
 \section{Projects}
+\begin{adjustwidth}{0.7em}{0pt}
 Visit \href{https://rl27.github.io/}{my website} to see my past projects with corresponding visuals, repos, posters, and more.
+\end{adjustwidth}
 
 % Awards
 \section{Honors, Awards, and Achievements}
+\begin{adjustwidth}{0.7em}{0pt}
 
 \begin{jobshort}{NSF Graduate Research Fellowship Awardee}{Apr. 2024}
 \end{jobshort}
@@ -259,6 +268,7 @@ Visit \href{https://rl27.github.io/}{my website} to see my past projects with co
 \end{jobshort}
 \begin{jobshort}{Yale Science and Engineering Award in Computer Science at CWOSE}{Feb. 2017}
 \end{jobshort}
+\end{adjustwidth}
 
 %----------------------------------------------------------------------------------------
 %   PUBLICATIONS
