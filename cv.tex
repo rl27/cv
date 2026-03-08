@@ -122,6 +122,14 @@
     \end{minipage}    
     }
 
+\newenvironment{mentee}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    #1 & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
 
 
 %----------------------------------------------------------------------------------------
@@ -152,13 +160,13 @@
 \section{Education}
 \begin{adjustwidth}{0.7em}{0pt}
 
-\begin{joblong}{Harvard University}{2024 – Present}
+\begin{joblong}{Harvard University}{May 2029 (Anticipated)}
 \item PhD in Computer Science (GPA: 4.0/4.0)
 \item Funded by the NSF GRFP
 \end{joblong}
 
 \vspace{-3pt}
-\begin{joblong}{Princeton University}{2019 – 2023}
+\begin{joblong}{Princeton University}{May 2023}
 \item BSE in Computer Science (GPA: 3.9/4.0)
 \item Minor in Statistics and Machine Learning
 % \item Relevant courses: Computer Vision, NLP, Mathematics for Machine Learning, \newline Algorithms and Data Structures, Statistics \& Data Analysis, Computer Architecture
@@ -187,34 +195,26 @@
 \vspace{-10pt}
 \section{Publications}
 
-\textbf{Raymond Liu} and Patrick Slade. Improving navigation for people with blindness using an AI-driven smartphone application and personalized audio guidance. \textit{Under review at Nature Biomedical Engineering}, 2025
+\textbf{Raymond Liu} and Patrick Slade. Improving navigation for people with blindness using an AI-driven smartphone application and personalized audio guidance. \textit{Under review at Nature Biomedical Engineering}, 2026.
 
-\textbf{Raymond Liu}, Ava Lakmazaheri, Estelle Richard, Louis Marchand, Elena Glassman, and Patrick Slade. Training methods for spatial audio feedback with human-robot interaction. \textit{In preparation for Nature Human Behaviour}, 2026
+\textbf{Raymond Liu}, Ava Lakmazaheri, Estelle Richard, Louis Marchand, Elena Glassman, and Patrick Slade. Training methods for spatial audio feedback with human-robot interaction. \textit{In preparation}, 2026.
 
-Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow-based MoE Routing: A Training-Free Inference Time Plugin for Expert Selection. \textit{Under review as a workshop paper at ICLR}, 2026
+Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow-based MoE Routing: A Training-Free Inference Time Plugin for Expert Selection. \textit{ICLR Test-Time Updates (TTU) Workshop}, 2026. (Accepted oral presentation)
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
+%   Work Experience
 %----------------------------------------------------------------------------------------
-
-%Experience
 \vspace{-2pt}
 \section{Work Experience}
 \begin{adjustwidth}{0.7em}{0pt}
 
-\begin{joblong}{Visiting Researcher at Harvard Ability Lab}{July 2023 – Aug. 2024}
+\begin{joblong}{Visiting Researcher at Harvard Slade Lab}{July 2023 – Aug. 2024}
 \item Developing a smartphone-based navigation assistant for people who are blind or visually impaired.
 \item For this work, we received funding from the Amazon Greater Boston Tech Initiative (\$50k) and the Harvard GRID Accelerator (\$100k).
 \end{joblong}
 
 \begin{joblong}{Software Engineering Intern at Amazon}{May 2022 – Aug. 2022}
 \item Developed, tested, and optimized an API in Java to send parallelized batch requests to Elasticsearch and greatly speed up workflows.
-\end{joblong}
-
-\begin{joblong}{Teaching Assistant at Princeton University}{Sept. 2021 – May 2023}
-\item TA for \href{https://www.cs.princeton.edu/courses/archive/fall21/cos340/}{COS340 – Reasoning about Computation}
-\item Guided students during regular office hours; graded and provided feedback for assignments and exams.
-\item Covered mathematical and theoretical topics in computer science – combinatorics, probability, graph theory, NP-completeness, and cryptography.
 \end{joblong}
 
 \begin{joblong}{Research Project at Princeton University}{June 2021 – Feb. 2022}
@@ -233,8 +233,89 @@ Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow
 
 \end{adjustwidth}
 
-% Awards
-\section{Honors, Awards, and Achievements}
+%----------------------------------------------------------------------------------------
+%	TALKS
+%----------------------------------------------------------------------------------------
+\vspace{-2pt}
+\section{Talks, Panels, and Exhibits}
+
+[T1] Raymond Liu. ``Smartphone Navigation Assistant for People with Impaired Vision,'' \textit{Harvard Robotics Trainee Seminar Series}, Harvard University, Aug. 2025.
+
+[E2] Exhibitor at \textit{DisabilityTech: Innovation for an Accessible Future}, Museum of Science, Boston, MA, Aug. 2025. % \href{https://www.linkedin.com/posts/raquelronzone_disabilitytech-edtech-activity-7361385360196530176-9dhf}{[Exhibitor listing]}
+
+[P2] Raymond Liu, Patrick Slade, Erich Manser. ``Accessibility Drives Innovation.'' Panel at \textit{Harvard Accessibility Summit}, Harvard University, June 2025. \href{https://accessibility.huit.harvard.edu/event/2025-accessibility-summit}{[Event page]}
+
+[P1] Panel at \textit{Revolutionizing Life: Frontiers of Biotechnology}, Harvard OpenBio Lab, June 2025. \href{https://youtu.be/14_eO5z5slk?t=9369}{[Video]}% | \href{https://www.linkedin.com/posts/harvardundergraduateopenbiolaboratory_openbios-revolutionizing-life-frontiers-activity-7315120940122546176-OqB6}{Event announcement}
+
+[E1] Raymond Liu. ``A Personalized Navigation Assistant for People with Impaired Vision or Blindness.'' Poster with demo at \textit{Northeast Robotics Colloquium (NERC)}, UMass Amherst, Sep. 2024. \href{https://www.umass.edu/robotics/nerc2024/presenter-information}{[Event page]}
+
+%----------------------------------------------------------------------------------------
+%	Teaching Experience
+%----------------------------------------------------------------------------------------
+\vspace{-2pt}
+\section{Teaching and Outreach}
+
+% ES224 F25; BE124 S26
+\begin{joblong}{Teaching Fellow at Harvard University}{Sep. 2025 – May 2026}
+\item ES224/BE124 – Biomechanics of Movement and Assistive Robotics
+\item Gave guest lectures on personalizing assistive devices in the real world.
+\item Guided students during regular office hours; graded and provided feedback for assignments and exams.
+\item Course content: biomechanical principles of movement, simulation with musculoskeletal modeling, and topics in assistive robotics.
+\end{joblong}
+
+\begin{joblong}{National Biomechanics Day at Harvard}{2024 – 2026}
+\item Helped host annual \href{National Biomechanics Day}{\href{https://sladelab.seas.harvard.edu/outreach/}} events at Harvard; demonstrated machine learning and wearable sensing concepts to Boston-area high school students.
+\end{joblong}
+
+% (F21, S22, F22, S23)
+\begin{joblong}{Teaching Assistant at Princeton University}{Sep. 2021 – May 2023}
+\item \href{https://www.cs.princeton.edu/courses/archive/fall21/cos340/}{COS340 – Reasoning about Computation}
+\item Guided students during regular office hours; graded and provided feedback for assignments and exams.
+\item Course content: mathematical and theoretical topics in computer science – combinatorics, probability, graph theory, NP-completeness, and cryptography.
+\end{joblong}
+
+% \begin{joblong}{Princeton Alumni Interviewer}{2025 – 2026}
+% \item Interviewed prospective applicants for the Class of 2029 and Class of 2030 as a member of the Princeton Alumni Schools Committee of Oregon.
+% \end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	Research Mentorship
+%----------------------------------------------------------------------------------------
+\vspace{-2pt}
+\section{Research Mentoring}
+
+\textbf{Master's Students:}
+
+% \textbf{Ambre Jade Sassi} \textbar\ Robotics and Neural Eng. (Visiting from EPFL)) \textbar\ Thesis
+
+\begin{mentee}{Ambre Jade Sassi \textbar\ Robotics and Neural Eng. (Visiting from EPFL)) \textbar\ \textit{Thesis}}{Mar–Sep 2026}
+\end{mentee}
+\begin{mentee}{Louis Marchand \textbar\ Robotics and Data Science (Visiting from EPFL)) \textbar\ \textit{Thesis}}{Mar–Sep 2025}
+\end{mentee}
+\begin{mentee}{Estelle Richard \textbar\ Robotics (Visiting from EPFL) \textbar\ \textit{Thesis}}{Mar–Sep 2024}
+\end{mentee}
+
+\vspace{-10pt}
+\textbf{Bachelor's Students:}
+
+\begin{mentee}{Serena Liu \textbar\ Mechanical Engineering}{Fall 2025}
+\end{mentee}
+\begin{mentee}{Ali Saffarini \textbar\ Electrical Engineering}{Spr 2024, Fall 2024, Spr 2025}
+\end{mentee}
+\begin{mentee}{Alina Yu \textbar\ Computer Science}{Fall 2024}
+\end{mentee}
+\begin{mentee}{Pooja Vegesna \textbar\ Computer Science (Visiting from UChicago)}{Summer 2024}
+\end{mentee}
+\begin{mentee}{Nico Fidalgo \textbar\ Computer Science}{Fall 2023}
+\end{mentee}
+\begin{mentee}{Kuma McCraw \textbar\ Mechanical Engineering}{Fall 2023}
+\end{mentee}
+
+%----------------------------------------------------------------------------------------
+%   Honors and Awards
+%----------------------------------------------------------------------------------------
+\vspace{-2pt}
+\section{Honors and Awards}
 \begin{adjustwidth}{0.7em}{0pt}
 
 \begin{jobshort}{NSF Graduate Research Fellowship Awardee}{Apr. 2024}
@@ -242,13 +323,13 @@ Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow
 \begin{joblong}{Harvard GRID Accelerator Awardee}{Feb. 2024}
     \item Received \$100k in funding for our proposal, “Navigation assistant for people with impaired vision or blindness.” 
 \end{joblong}
-\begin{joblong}{Amazon Greater Boston Tech Initiative Awardee}{Dec. 2023}
+\begin{joblong}{Amazon Robotics Greater Boston Tech Initiative Awardee}{Dec. 2023}
     \item Received \$50k in funding for our proposal, “Curriculum for developing a robotic navigation assistant for people with visual impairment.” 
 \end{joblong}
 \begin{jobshort}{NSF Graduate Research Fellowship Honorable Mention}{Mar. 2023}
 \end{jobshort}
 \begin{joblong}{USA Junior Mathematical Olympiad Qualifier}{Apr. 2018}
-    \item One of 156 qualifiers nationwide.
+    \item One of 156 qualifiers nationwide, advancing from the AIME.
 \end{joblong}
 \begin{joblong}{American Invitational Mathematics Examination (AIME) Qualifier}{2016, 2017, 2018}
     \item The top 2.5\% of participants in the AMC 10 exam qualify for the AIME.
