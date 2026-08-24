@@ -1,52 +1,6 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%   The MIT License (MIT)
-%
-%   Copyright (c) 2021 Jitin Nair
-%
-%   Permission is hereby granted, free of charge, to any person obtaining a copy
-%   of this software and associated documentation files (the "Software"), to deal
-%   in the Software without restriction, including without limitation the rights
-%   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%   copies of the Software, and to permit persons to whom the Software is
-%   furnished to do so, subject to the following conditions:
-%   
-%   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%   THE SOFTWARE.
-%   
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
 
-%----------------------------------------------------------------------------------------
-%   DOCUMENT DEFINITION
-%----------------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
 
-% article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
-
-%----------------------------------------------------------------------------------------
-%   FONT
-%----------------------------------------------------------------------------------------
-
-% % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
-
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
-
-%----------------------------------------------------------------------------------------
-%   PACKAGES
-%----------------------------------------------------------------------------------------
 \usepackage{url}
 \usepackage{parskip}
 \usepackage{changepage}
@@ -77,17 +31,15 @@
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
-%http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{8pt}{8pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{linkcolour}{rgb}{0,0.2,0.7}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
@@ -97,7 +49,6 @@
 
 %debug page outer frames
 %\usepackage{showframe}
-
 
 % job listing environments
 \newenvironment{jobshort}[2]
@@ -119,7 +70,7 @@
     }
     {
     \end{itemize}
-    \end{minipage}    
+    \end{minipage}
     }
 
 \newenvironment{mentee}[2]
@@ -130,7 +81,6 @@
     }
     {
     }
-
 
 %----------------------------------------------------------------------------------------
 %   BEGIN DOCUMENT
@@ -146,12 +96,11 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Raymond Liu} \\[7.5pt]
-\href{https://github.com/rl27}{\raisebox{-0.05\height}\faGithub\ rl27} \ $|$ \ 
-\href{https://linkedin.com/in/raymondzl}{\raisebox{-0.05\height}\faLinkedin\ raymondzl} \ $|$ \ 
-\href{https://rl27.github.io}{\raisebox{-0.05\height}\faGlobe \ rl27.github.io} \ $|$ \ 
+% \href{https://github.com/rl27}{\raisebox{-0.05\height}\faGithub\ rl27} \ $|$ \ 
+\href{https://rl27.github.io}{\raisebox{-0.05\height}\faLink \ website} \ $|$ \ 
+\href{https://linkedin.com/in/raymondzl}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \ 
 \href{mailto:liur@seas.harvard.edu}{\raisebox{-0.05\height}\faEnvelope \ liur@seas.harvard.edu} \
-% $|$ \ 
-% \href{tel:5416020508}{\raisebox{-0.05\height}\faMobile \ (541) 602-0508} \\
+% $|$ \ \href{tel:5416020508}{\raisebox{-0.05\height}\faMobile \ (541) 602-0508} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -161,14 +110,14 @@
 \begin{adjustwidth}{0.5em}{0pt}
 
 \begin{joblong}{Harvard University}{}
-\item PhD, Computer Science (GPA: 4.0/4.0) \hfill Expected May 2029 \\
+\item PhD, Computer Science \hfill Expected May 2029 \\
 \textit{Co-advisors}: Patrick Slade, Elena Glassman
-\item SM, Computer Science \hfill Expected May 2026 \\
+\item SM, Computer Science \hfill May 2026 \\
 \end{joblong}
 
 \vspace{-20pt}
 \begin{joblong}{Princeton University}{}
-\item BSE, Computer Science (GPA: 3.9/4.0) \hfill May 2023
+\item BSE, Computer Science \hfill May 2023
 \item Minor in Statistics and Machine Learning
 % \item Relevant courses: Computer Vision, NLP, Mathematics for Machine Learning, \newline Algorithms and Data Structures, Statistics \& Data Analysis, Computer Architecture
 \end{joblong}
@@ -197,11 +146,17 @@
 \section{Publications}
 \begin{adjustwidth}{0.5em}{0pt}
 
-\textbf{Raymond Liu} and Patrick Slade. Improving outdoor navigation for people with blindness using an AI-driven smartphone application and personalized audio guidance. \textit{Accepted at Nature Biomedical Engineering}, 2026.
+``\textbf{Improving outdoor navigation for people with blindness using an AI-driven smartphone application and personalized audio guidance}''
+\newline\underline{Raymond Liu} and Patrick Slade
+\newline\textit{Nature Biomedical Engineering}, 2026 \href{https://www.nature.com/articles/s41551-026-01772-x}{[Link]}
 
-\textbf{Raymond Liu}, Ava Lakmazaheri, Estelle Richard, Louis Marchand, Elena Glassman, and Patrick Slade. Training methods for spatial audio feedback with human-robot interaction. \textit{In preparation}.
+``\textbf{Training methods for human-robot interaction}''
+\newline\underline{Raymond Liu}, Ava Lakmazaheri, Estelle Richard, Louis Marchand, Elena Glassman, and Patrick Slade
+\newline\textit{In preparation}
 
-Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow-based MoE Routing: A Training-Free Inference Time Plugin for Expert Selection. \textit{ICLR Test-Time Updates (TTU) Workshop}, 2026. (Accepted oral presentation) \href{https://openreview.net/forum?id=QjLh6MvkWI}{[Link]}
+``\textbf{Elbow-based MoE Routing: A Training-Free Inference Time Plugin for Expert Selection}''
+\newline Robin Pan, \underline{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei
+\newline\textit{ICLR Workshop on Test-Time Updates}, 2026 (Accepted oral presentation) \href{https://openreview.net/forum?id=QjLh6MvkWI}{[Link]}
 
 \end{adjustwidth}
 
@@ -243,6 +198,8 @@ Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow
 \vspace{-6pt}
 \section{Talks, Panels, and Exhibits}
 \begin{adjustwidth}{0.5em}{0pt}
+
+[E3] Tech demo at \textit{Abilities: Amplified}, Hatch Memorial Shell, Boston, MA, June 2026. \href{https://events.seas.harvard.edu/event/abilities-amplified}{[Event page]}
 
 [T1] Raymond Liu. ``Smartphone Navigation Assistant for People with Impaired Vision,'' \textit{Harvard Robotics Trainee Seminar Series}, Harvard University, Aug. 2025.
 
@@ -298,11 +255,11 @@ Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow
 \textbf{Master's Students:}
 \begin{adjustwidth}{0.5em}{0pt}
 
-\begin{mentee}{Ambre Jade Sassi \textbar\ Robotics and Neural Eng. (Visiting from EPFL)) \textbar\ \textit{Thesis}}{Mar–Sep 2026}
+\begin{mentee}{Ambre Jade Sassi \textbar\ Robotics and Neural Eng. (Visiting from EPFL) \textbar\ \textit{Thesis}}{Mar–Sep 2026}
 \end{mentee}
 % \begin{mentee}{Janys Li \textbar\ Data Science}{Mar–Sep 2026}
 % \end{mentee}
-\begin{mentee}{Louis Marchand \textbar\ Robotics and Data Science (Visiting from EPFL)) \textbar\ \textit{Thesis}}{Mar–Sep 2025}
+\begin{mentee}{Louis Marchand \textbar\ Robotics and Data Science (Visiting from EPFL) \textbar\ \textit{Thesis}}{Mar–Sep 2025}
 \end{mentee}
 \begin{mentee}{Estelle Richard \textbar\ Robotics (Visiting from EPFL) \textbar\ \textit{Thesis}}{Mar–Sep 2024}
 \end{mentee}
@@ -340,10 +297,10 @@ Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow
 \begin{jobshort}{NSF Graduate Research Fellowship Awardee}{Apr. 2024}
 \end{jobshort}
 \begin{joblong}{Harvard GRID Accelerator Awardee}{Feb. 2024}
-    \item Received \$100k in funding for our proposal, “Navigation assistant for people with impaired vision or blindness.” 
+    \item Received \$100k grant for our proposal, “Navigation assistant for people with impaired vision or blindness.”
 \end{joblong}
 \begin{joblong}{Amazon Robotics Greater Boston Tech Initiative Awardee}{Dec. 2023}
-    \item Received \$50k in funding for our proposal, “Curriculum for developing a robotic navigation assistant for people with visual impairment.” 
+    \item Received \$50k grant for our proposal, “Curriculum for developing a robotic navigation assistant for people with visual impairment.” 
 \end{joblong}
 \begin{jobshort}{NSF Graduate Research Fellowship Honorable Mention}{Mar. 2023}
 \end{jobshort}
@@ -357,14 +314,14 @@ Robin Pan, \textbf{Raymond Liu}, Daniel Fang, Rosa Wu, and Adelina Andrei. Elbow
 % \end{jobshort}
 % \begin{jobshort}{Oregon Invitational Mathematics Tournament - 4th Place (Calculus)}{May 2017}
 % \end{jobshort}
-\begin{jobshort}{Intel Northwest Science Expo (NWSE) Finalist}{Apr. 2017}
-\end{jobshort}
-\begin{jobshort}{IEEE Excellence in Computer Science Award at Intel NWSE}{Apr. 2017}
-\end{jobshort}
-\begin{jobshort}{Central Western Oregon Science Expo (CWOSE) Finalist}{Feb. 2017}
-\end{jobshort}
-\begin{jobshort}{Yale Science and Engineering Award in Computer Science at CWOSE}{Feb. 2017}
-\end{jobshort}
+% \begin{jobshort}{Intel Northwest Science Expo (NWSE) Finalist}{Apr. 2017}
+% \end{jobshort}
+% \begin{jobshort}{IEEE Excellence in Computer Science Award at Intel NWSE}{Apr. 2017}
+% \end{jobshort}
+% \begin{jobshort}{Central Western Oregon Science Expo (CWOSE) Finalist}{Feb. 2017}
+% \end{jobshort}
+% \begin{jobshort}{Yale Science and Engineering Award in Computer Science at CWOSE}{Feb. 2017}
+% \end{jobshort}
 \end{adjustwidth}
 
 %----------------------------------------------------------------------------------------
